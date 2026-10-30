@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Reserva tu mesa en Konys Pizza, pizzería de pizza en cono en Bucaramanga.">
+  <meta name="theme-color" content="#0F2B3D">
+  <title>Konys Pizza | Reserva tu mesa</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 26 42'%3E%3Cpolygon points='0,8 26,8 13,42' fill='%23F28C28'/%3E%3Cellipse cx='13' cy='7.5' rx='12' ry='7.5' fill='%23D9482B'/%3E%3Ccircle cx='12' cy='7' r='3' fill='%234F8A5B'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+
+  <header class="cabecera">
+    <div class="contenedor cabecera-interior">
+      <a class="logo" href="#inicio">
+        <!-- Icono del cono: triángulo naranja, pizza tomate y punto de albahaca. -->
+        <svg class="logo-icono" viewBox="0 0 26 42" width="26" height="42" aria-hidden="true">
+          <polygon points="0,8 26,8 13,42" fill="#F28C28"></polygon>
+          <ellipse cx="13" cy="7.5" rx="12" ry="7.5" fill="#D9482B"></ellipse>
+          <circle cx="12" cy="7" r="3" fill="#4F8A5B"></circle>
+        </svg>
+        <span class="logo-texto">KONYS</span>
+      </a>
+
+      <button
+        type="button"
+        id="boton-menu"
+        class="boton-menu"
+        aria-expanded="false"
+        aria-controls="menu-principal"
+        aria-label="Abrir menú"
+      >
+        <span class="boton-menu-icono" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </button>
+
+      <nav id="menu-principal" class="nav-principal" aria-label="Principal">
+        <ul class="menu-enlaces">
+          <li><a href="#inicio" aria-current="page">Inicio</a></li>
+          <li><a href="#mesas">Mesas</a></li>
+          <li><a href="#carta">Carta</a></li>
+          <li><a href="#mesas">Reservar</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <a class="enlace-admin" href="admin.html">Admin</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <noscript>
+      <p class="aviso-js">Activa JavaScript para ver las mesas y la carta.</p>
+    </noscript>
+
+    <section class="hero" id="inicio" aria-labelledby="titulo-principal">
+      <div class="contenedor hero-rejilla">
+        <div class="hero-texto">
+          <p class="etiqueta">Pizza en cono · Bucaramanga</p>
+          <h1 id="titulo-principal">La pizza más icónica de la ciudad</h1>
+          <p class="hero-descripcion">Reserva tu mesa en segundos, mira en tiempo real qué horarios están libres y llega directo a disfrutar.</p>
+          <div class="hero-acciones">
+            <a class="boton boton-primario" href="#mesas">Reserva tu mesa</a>
+            <a class="boton boton-secundario" href="#carta">Ver la carta</a>
+          </div>
+          <div class="hero-datos">
+            <p>
+              <span class="dato-numero">+34.900</span>
+              <span class="dato-etiqueta">seguidores en Instagram</span>
+            </p>
+            <p>
+              <span class="dato-numero">2 jornadas</span>
+              <span class="dato-etiqueta">12:30 a 2:30 p. m. y 5:00 a 11:00 p. m.</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- Ilustración decorativa: no está ligada al estado real de las mesas. -->
+        <div class="hero-panel" aria-hidden="true">
+          <span class="hero-punto hero-punto--tomate"></span>
+          <span class="hero-punto hero-punto--albahaca"></span>
+          <span class="hero-punto hero-punto--naranja"></span>
+          <div class="hero-circulo"></div>
+          <svg class="hero-cono" viewBox="0 0 26 42" width="200" height="323">
+            <polygon points="0,8 26,8 13,42" fill="#F28C28"></polygon>
+            <ellipse cx="13" cy="7.5" rx="12" ry="7.5" fill="#D9482B"></ellipse>
+            <circle cx="12" cy="7" r="3" fill="#4F8A5B"></circle>
+          </svg>
+          <div class="hero-tarjeta">
+            <p class="hero-tarjeta-titulo">Mesa 3 · Salón</p>
+            <p class="hero-tarjeta-hora">Hoy a las 19:30</p>
+            <span class="chip-estado chip-estado--libre">Libre</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion seccion-pasos" aria-labelledby="titulo-pasos">
+      <div class="contenedor">
+        <div class="seccion-encabezado">
+          <h2 id="titulo-pasos">Reservar es así de fácil</h2>
+        </div>
+        <div class="rejilla-pasos">
+          <article class="tarjeta-paso">
+            <span class="paso-numero">1</span>
+            <h3>Elige tu mesa</h3>
+            <p>Revisa terraza y salón y escoge la que más te guste.</p>
+          </article>
+          <article class="tarjeta-paso">
+            <span class="paso-numero">2</span>
+            <h3>Fecha y hora</h3>
+            <p>Mira los horarios libres y aparta el que te sirva.</p>
+          </article>
+          <article class="tarjeta-paso">
+            <span class="paso-numero">3</span>
+            <h3>Confirma</h3>
+            <p>Deja tus datos y llega directo a disfrutar.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion seccion-mesas" id="mesas" aria-labelledby="titulo-mesas">
+      <div class="contenedor">
+        <div class="seccion-encabezado">
+          <h2 id="titulo-mesas">Nuestras mesas</h2>
+          <p>Toca una mesa para ver sus horarios disponibles.</p>
+        </div>
+        <div id="filtros-mesas" class="filtros" role="group" aria-label="Filtrar mesas por zona">
+          <button type="button" class="filtro is-activo" aria-pressed="true" data-valor="todas">Todas</button>
+          <button type="button" class="filtro" aria-pressed="false" data-valor="terraza">Terraza</button>
+          <button type="button" class="filtro" aria-pressed="false" data-valor="salon">Salón</button>
+        </div>
+        <p id="anuncio-mesas" class="solo-lectores" aria-live="polite">Cargando mesas…</p>
+        <p id="vacio-mesas" class="aviso-vacio">Cargando mesas…</p>
+        <ul id="lista-mesas" class="rejilla-mesas" aria-busy="true" hidden></ul>
+      </div>
+    </section>
+
+    <section class="seccion seccion-carta" id="carta" aria-labelledby="titulo-carta">
+      <div class="contenedor">
+        <div class="seccion-encabezado">
+          <h2 id="titulo-carta">Nuestra carta</h2>
+        </div>
+        <div id="filtros-carta" class="filtros" role="group" aria-label="Filtrar la carta por categoría">
+          <button type="button" class="filtro is-activo" aria-pressed="true" data-valor="pizzas">Pizzas</button>
+          <button type="button" class="filtro" aria-pressed="false" data-valor="entradas">Entradas</button>
+          <button type="button" class="filtro" aria-pressed="false" data-valor="postres">Postres</button>
+          <button type="button" class="filtro" aria-pressed="false" data-valor="bebidas">Bebidas</button>
+        </div>
+        <p id="anuncio-platos" class="solo-lectores" aria-live="polite">Cargando la carta…</p>
+        <p id="vacio-platos" class="aviso-vacio">Cargando la carta…</p>
+        <ul id="lista-platos" class="lista-platos" aria-busy="true" hidden></ul>
+      </div>
+    </section>
+
+    <section class="seccion seccion-cta" aria-labelledby="titulo-cta">
+      <div class="contenedor">
+        <div class="banda-cta">
+          <h2 id="titulo-cta">Tu mesa te está esperando</h2>
+          <a class="boton boton-oscuro" href="#mesas">Reserva tu mesa</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie" id="contacto">
+    <h2 class="solo-lectores">Contacto</h2>
+    <div class="contenedor pie-interior">
+      <div class="pie-marca">
+        <a class="logo logo--claro" href="#inicio">
+          <svg class="logo-icono" viewBox="0 0 26 42" width="26" height="42" aria-hidden="true">
+            <polygon points="0,8 26,8 13,42" fill="#F28C28"></polygon>
+            <ellipse cx="13" cy="7.5" rx="12" ry="7.5" fill="#D9482B"></ellipse>
+            <circle cx="12" cy="7" r="3" fill="#4F8A5B"></circle>
+          </svg>
+          <span class="logo-texto">KONYS</span>
+        </a>
+      </div>
+      <div>
+        <p class="pie-titulo">Visítanos</p>
+        <address class="pie-texto">Cra. 36 con calle 41, Bucaramanga, Santander</address>
+      </div>
+      <div>
+        <p class="pie-titulo">Horarios</p>
+        <p class="pie-texto"><strong>Almuerzo:</strong> 12:30 a 2:30 p. m.</p>
+        <p class="pie-texto"><strong>Noche:</strong> 5:00 a 11:00 p. m.</p>
+      </div>
+      <div>
+        <p class="pie-titulo">Contacto</p>
+        <ul class="pie-enlaces">
+          <!-- Número de ejemplo: el brief no traía un WhatsApp real. -->
+          <li><a href="https://wa.me/573000000000" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+          <li><a href="https://www.instagram.com/konys_pizza/" target="_blank" rel="noopener noreferrer">Instagram @konys_pizza</a></li>
+        </ul>
+        <p class="pie-texto">Domicilios y eventos</p>
+      </div>
+    </div>
+    <div class="contenedor">
+      <p class="pie-legal">Proyecto académico · Konys Pizza · Bucaramanga</p>
+    </div>
+  </footer>
+
+  <template id="plantilla-cono">
+    <svg class="icono-cono" viewBox="0 0 26 42" width="26" height="42" aria-hidden="true">
+      <polygon points="0,8 26,8 13,42" fill="#F28C28"></polygon>
+      <ellipse cx="13" cy="7.5" rx="12" ry="7.5" fill="#D9482B"></ellipse>
+      <circle cx="12" cy="7" r="3" fill="#4F8A5B"></circle>
+    </svg>
+  </template>
+
+  <template id="plantilla-icono-mesa">
+    <svg class="icono-mesa" viewBox="0 0 80 80" width="76" height="76" aria-hidden="true">
+      <circle cx="40" cy="40" r="18" fill="none" stroke="currentColor" stroke-width="4"></circle>
+      <circle cx="40" cy="40" r="3" fill="currentColor"></circle>
+      <rect x="34" y="6" width="12" height="10" rx="4" fill="currentColor"></rect>
+      <rect x="34" y="64" width="12" height="10" rx="4" fill="currentColor"></rect>
+      <rect x="6" y="34" width="10" height="12" rx="4" fill="currentColor"></rect>
+      <rect x="64" y="34" width="10" height="12" rx="4" fill="currentColor"></rect>
+    </svg>
+  </template>
+
+  <script type="module" src="js/cliente.js"></script>
+</body>
+</html>

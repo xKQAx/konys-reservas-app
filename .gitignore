@@ -1,0 +1,5 @@
+# Claves locales. config.js se copia desde config.example.js y no se sube.
+js/config.js
+.env
+node_modules
+.DS_Store
